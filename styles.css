@@ -5,6 +5,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -24,21 +28,35 @@ ul {
 /* sidebar section */
 .sidebar {
   background-color: #60a5fa;
+  box-sizing: border-box;
+  height: 100vh;
+  font-size: 1.5rem;
+  padding-left: 1em;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .dashboard {
   background: url(./icons/view-dashboard.svg) no-repeat left top;
   font-size: 1.96rem;
+  padding-left: 1.5em;
 }
 
 .dashboard,
 li {
-  padding-left: 1.5em;
+  font-weight: bold;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(195deg) brightness(107%) contrast(101%);
+}
+
+li {
+  margin-bottom: 1em;
+  padding-left: 2em;
 }
 
 li.home {
   background: url(./icons/home-account.svg) no-repeat left top;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(195deg) brightness(107%) contrast(101%);
 }
 
 li.profile {

@@ -1,0 +1,84 @@
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.right {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+  background-color: #60a5fa;
+}
+
+.dashboard {
+  background: url(./icons/view-dashboard.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.home {
+  /* font-size: 30px; */
+  /* list-style-type: none; */
+  /* margin-bottom: 1rem; */
+  background: url(./icons/home-account.svg) no-repeat left top;
+  /* padding: 0px 0 3px 24px; */
+  padding-left: 24px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(195deg) brightness(107%) contrast(101%);
+}
+
+li.profile {
+  background: url(./icons/card-account-details-outline.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.messages {
+  background: url(./icons/message-reply.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.history {
+  background: url(./icons/clock-time-three-outline.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.tasks {
+  background: url(./icons/note-multiple.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.communities {
+  background: url(./icons/account-group.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.settings {
+  background: url(./icons/cog.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.support {
+  background: url(./icons/help-box.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+li.privacy {
+  background: url(./icons/shield-check.svg) no-repeat left top;
+  padding-left: 24px;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.content {
+  background-color: #eff6ff;
+}

@@ -193,11 +193,55 @@ li.privacy {
 /* content section */
 .content {
   background-color: #eff6ff;
-  padding: 2em 1em;
+  padding: 2em 1em 4em;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
 }
 
 .card-wrapper .card {
 background-color: #fff;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5em;
+  height: 100%;
+}
+
+.card {
+  /* TODO fix extra padding */
+  /* padding-top: 1em; */
+  /* padding-bottom: 1em; */
+  
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+.card-btn {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}
+
+.card-btn button {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  background-color: #fff ;
+}
+
+.card-btn button.star {
+  background-image: url(./icons/star-plus-outline.svg);
+}
+
+.card-btn button.watch {
+  background-image: url(./icons/eye-plus-outline.svg);
+}
+
+.card-btn button.share {
+  background-image: url(./icons/share-variant-outline.svg);
 }

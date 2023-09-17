@@ -194,4 +194,10 @@ li.privacy {
 .content {
   background-color: #eff6ff;
   padding: 2em 1em;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.card-wrapper .card {
+background-color: #fff;
 }

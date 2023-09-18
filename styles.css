@@ -5,17 +5,13 @@ html {
   font-size: 16px;
 }
 
-body {
+html, body, p {
   margin: 0;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-}
-
-p {
   margin: 0;
 }
 
@@ -214,10 +210,6 @@ li.privacy {
   padding-bottom: 0.5em;
 }
 
-.card-wrapper .card {
-  background-color: #fff;
-}
-
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -227,6 +219,7 @@ li.privacy {
 }
 
 .card-wrapper .card {
+  background-color: #fff;
   padding: 1.5em;
   display: flex;
   flex-direction: column;

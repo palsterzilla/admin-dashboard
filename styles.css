@@ -15,6 +15,10 @@ ul {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -193,11 +197,17 @@ li.privacy {
 /* content section */
 .content {
   background-color: #eff6ff;
-  padding: 2em 1em 4em;
+  padding: 2em 2em 4em;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1em;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 1.5em;
 }
+
+/* TODO fix overflowing child div */
+/* .content .main {
+  display: flex;
+  flex-direction: column;
+} */
 
 .title {
   font-weight: bold;
@@ -217,7 +227,7 @@ li.privacy {
   height: 100%;
 }
 
-.card {
+.card-wrapper .card {
   padding-right: 1.5em;
   padding-left: 1.5em;
   display: flex;
@@ -228,14 +238,13 @@ li.privacy {
   box-shadow: 4px 4px 4px rgba(17,17,17,0.3);
 }
 
+hr + p,
 .card p:first-child {
   font-weight: bold;
-  margin: 0;
 }
 
 .card p + p {
   color: #636363;
-  margin: 0;
 }
 
 .card-btn {
@@ -264,4 +273,27 @@ li.privacy {
 
 .card-btn button.share {
   background-image: url(./icons/share-variant-outline.svg);
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.announce .card {
+  background-color: #fff;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(17,17,17,0.3);
+}
+
+hr {
+  margin: 1em 0;
+}
+
+.announce .card p {
+  margin: 0 0.5em;
 }

@@ -243,7 +243,8 @@ hr + p,
   font-weight: bold;
 }
 
-.card p + p {
+.card p + p,
+.card div + p {
   color: #636363;
 }
 
@@ -296,4 +297,32 @@ hr {
 
 .announce .card p {
   margin: 0 0.5em;
+}
+
+.trending div + div img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.trending .card {
+  background-color: #fff;
+  padding: 1.5em;
+  box-shadow: 4px 4px 4px rgba(17,17,17,0.3);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.trending .card .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.card .user div p:first-child {
+  font-weight: normal;
 }

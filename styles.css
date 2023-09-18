@@ -195,11 +195,18 @@ li.privacy {
   background-color: #eff6ff;
   padding: 2em 1em 4em;
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
 }
 
 .card-wrapper .card {
-background-color: #fff;
+  background-color: #fff;
 }
 
 .card-wrapper {
@@ -211,18 +218,31 @@ background-color: #fff;
 }
 
 .card {
-  /* TODO fix extra padding */
-  /* padding-top: 1em; */
-  /* padding-bottom: 1em; */
-  
   padding-right: 1.5em;
   padding-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  border-left: 0.5em solid #F0B429;
+  box-shadow: 4px 4px 4px rgba(17,17,17,0.3);
+}
+
+.card p:first-child {
+  font-weight: bold;
+  margin: 0;
+}
+
+.card p + p {
+  color: #636363;
+  margin: 0;
 }
 
 .card-btn {
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
   justify-content: flex-end;
+  margin-top: 1em;
 }
 
 .card-btn button {

@@ -22,6 +22,7 @@ p {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  height: 100vh;
 }
 
 .right {
@@ -33,7 +34,6 @@ p {
 .sidebar {
   background-color: #60a5fa;
   box-sizing: border-box;
-  height: 100vh;
   font-size: 1.5rem;
   padding-left: 1em;
   padding-top: 1em;
@@ -96,10 +96,6 @@ li.privacy {
 }
 
 /* header section */
-.right {
-  height: 100vh;
-}
-
 .header {
   background-color: #fff;
   display: grid;

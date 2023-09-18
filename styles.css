@@ -96,6 +96,10 @@ li.privacy {
 }
 
 /* header section */
+.right {
+  height: 100vh;
+}
+
 .header {
   background-color: #fff;
   display: grid;
@@ -203,16 +207,15 @@ li.privacy {
   gap: 1.5em;
 }
 
-/* TODO fix overflowing child div */
-/* .content .main {
+.content .main {
   display: flex;
   flex-direction: column;
-} */
+}
 
 .title {
   font-weight: bold;
   font-size: 1.1rem;
-  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .card-wrapper .card {
@@ -280,6 +283,7 @@ hr + p,
   display: flex;
   flex-direction: column;
   gap: 1em;
+  justify-content: space-between;
 }
 
 .announce .card {

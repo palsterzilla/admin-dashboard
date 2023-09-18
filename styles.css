@@ -23,7 +23,7 @@ ul {
 
 .right {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
 }
 
 /* sidebar section */

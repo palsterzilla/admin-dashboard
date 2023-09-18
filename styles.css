@@ -21,11 +21,6 @@ ul {
   height: 100vh;
 }
 
-.right {
-  display: grid;
-  grid-template-rows: 1fr 5fr;
-}
-
 /* sidebar section */
 .sidebar {
   background-color: #60a5fa;
@@ -212,7 +207,7 @@ li.privacy {
 
 .card-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-rows: repeat(3, 1fr);
   gap: 1.5em;
   height: 100%;
